@@ -1,0 +1,68 @@
+{
+    "tasks":[
+        {
+            "name": "Feed the dog",
+            "monthDueDate": 4,
+            "dueDate": 26
+        },
+        {
+            "name": "Water the plants",
+            "monthDueDate": 4,
+            "dueDate": 28
+        },
+        {
+            "name": "Change the car tire",
+            "monthDueDate": 5,
+            "dueDate": 15
+        },
+        {
+            "name": "Finish building cabinets",
+            "monthDueDate": 5,
+            "dueDate": 22
+        }
+    ],
+    "appointments":[
+        {
+            "name": "Daughter's doctor",
+            "month": 4,
+            "day": 27
+        },
+        {
+            "name": "Son's soccer game",
+            "month": 4,
+            "day": 29
+        },
+        {
+            "name": "Dentist",
+            "month": 5,
+            "day": 10
+        },
+        {
+            "name": "Meeting with boss",
+            "month": 5,
+            "day": 5
+        }
+    ],
+    "finance":[
+        {
+            "name": "Credit card",
+            "month": 4,
+            "day": 30
+        },
+        {
+            "name": "Mortgage",
+            "month": 5,
+            "day": 1
+        },
+        {
+            "name": "Phone bill",
+            "month": 5,
+            "day": 12
+        },
+        {
+            "name": "Car payment",
+            "month": 5,
+            "day": 3
+        }
+    ]
+}
