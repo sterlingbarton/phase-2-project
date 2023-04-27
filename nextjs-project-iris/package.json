@@ -1,6 +1,8 @@
 {
   "private": true,
   "scripts": {
+    "dev:server": "json-server --watch db.json --port 3001",
+    "proxy": "http://localhost:3001",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -8,6 +10,8 @@
   "dependencies": {
     "@tanstack/react-query": "^4.29.5",
     "bootstrap": "^5.2.3",
+    "date-fns": "^2.29.3",
+    "json-server": "^0.17.3",
     "next": "latest",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.4",

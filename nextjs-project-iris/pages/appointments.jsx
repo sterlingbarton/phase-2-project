@@ -2,7 +2,8 @@ import Appt from '../comps/Appt';
 import Head from 'next/head'
 import {Container} from 'react-bootstrap'
 
-function Appointments() {
+function Appointments({appointmentData}) {
+    // console.log(appointmentData)
     return ( 
         <>
          <Head>
@@ -11,10 +12,20 @@ function Appointments() {
         </Head>
         <Container>
             <h1>Appointments</h1>
-            <Appt />
+            <Appt appointmentData={appointmentData}/>
         </Container>
         </>
      );
 }
+
+export async function getStaticProps() {
+    const res = await fetch('http://localhost:3001/appointments');
+    const appointmentData = await res.json();
+    return {
+      props: {
+        appointmentData
+      },
+    }
+  }
 
 export default Appointments;

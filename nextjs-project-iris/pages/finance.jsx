@@ -2,7 +2,7 @@ import Finances from "../comps/Finances";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 
-function Finance() {
+function Finance({financeData}) {
     return ( 
         <>
         <Head>
@@ -11,10 +11,21 @@ function Finance() {
         </Head>
         <Container>
             <h1>Finance</h1>
-            <Finances />
+            <Finances financeData={financeData}/>
         </Container>
         </>
      );
 }
+
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3001/finance');
+  const financeData = await res.json();
+  return {
+        props: {
+          financeData
+        },
+      }
+}
+
 
 export default Finance;
