@@ -1,8 +1,7 @@
 import { format, isAfter } from 'date-fns'
 const { toDate, parse } = require('date-fns')
 
-function Tasks({taskData}) {
-    console.log(taskData)
+function Tasks({taskData, handleClick}) {
     const today = new Date();
     const formattedDate = format(today, 'MM/dd')
 
@@ -19,10 +18,11 @@ function Tasks({taskData}) {
     // const newList = newTask.filter(task => isAfter(parse(task[0], 'MM/dd', new Date()), today))
     const newList = newTask.filter(task => task[0] === formattedDate)
 
+
     return ( 
         <div>
             <h3>Today's Tasks</h3>
-            <button>+</button>
+            <button onClick={handleClick}>+</button>
             <ul>{newList}</ul>
         </div>
      );

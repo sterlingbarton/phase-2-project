@@ -1,80 +1,110 @@
 {
-  "tasks":[
-      {
-          "id": 1,
-          "name": "Feed the dog",
-          "monthDueDate": 4,
-          "dueDate": 27
-      },
-      {
-          "id": 2,
-          "name": "Water the plants",
-          "monthDueDate": 4,
-          "dueDate": 28
-      },
-      {
-          "id": 3,
-          "name": "Change the car tire",
-          "monthDueDate": 5,
-          "dueDate": 15
-      },
-      {
-          "id": 4,
-          "name": "Finish building cabinets",
-          "monthDueDate": 5,
-          "dueDate": 22
-      }
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Feed the dog",
+      "monthDueDate": 4,
+      "dueDate": 27
+    },
+    {
+      "id": 2,
+      "name": "Water the plants",
+      "monthDueDate": 4,
+      "dueDate": 28
+    },
+    {
+      "id": 3,
+      "name": "Change the car tire",
+      "monthDueDate": 5,
+      "dueDate": 15
+    },
+    {
+      "id": 4,
+      "name": "Finish building cabinets",
+      "monthDueDate": 5,
+      "dueDate": 22
+    },
+    {
+      "id": 6,
+      "name": "Take out the garbage",
+      "monthDueDate": "4",
+      "dueDate": "28"
+    },
+    {
+      "id": 7,
+      "name": "Take out the dog",
+      "monthDueDate": "4",
+      "dueDate": "27"
+    },
+    {
+      "id": 8,
+      "name": "Get nails done",
+      "monthDueDate": "4",
+      "dueDate": "27"
+    }
   ],
-  "appointments":[
-      {
-          "id": 1,
-          "name": "Daughter's doctor",
-          "monthDueDate": 4,
-          "dueDate": 27
-      },
-      {
-          "id": 2,
-          "name": "Son's soccer game",
-          "monthDueDate": 4,
-          "dueDate": 29
-      },
-      {
-          "id": 3,
-          "name": "Dentist",
-          "monthDueDate": 5,
-          "dueDate": 10
-      },
-      {
-          "id": 4,
-          "name": "Meeting with boss",
-          "monthDueDate": 5,
-          "dueDate": 5
-      }
+  "appointments": [
+    {
+      "id": 1,
+      "name": "Daughter's doctor",
+      "monthDueDate": 4,
+      "dueDate": 27
+    },
+    {
+      "id": 2,
+      "name": "Son's soccer game",
+      "monthDueDate": 4,
+      "dueDate": 29
+    },
+    {
+      "id": 3,
+      "name": "Dentist",
+      "monthDueDate": 5,
+      "dueDate": 10
+    },
+    {
+      "id": 4,
+      "name": "Meeting with boss",
+      "monthDueDate": 5,
+      "dueDate": 5
+    },
+    {
+      "id": 5,
+      "name": "Nail appointment",
+      "monthDueDate": "4",
+      "dueDate": "27"
+    }
   ],
-  "finance":[
-      {
-          "id": 1,
-          "name": "Credit card",
-          "monthDueDate": 4,
-          "dueDate": 27
-      },
-      {
-          "id": 2,
-          "name": "Mortgage",
-          "monthDueDate": 5,
-          "dueDate": 1
-      },
-      {
-          "id": 3,
-          "name": "Phone bill",
-          "monthDueDate": 5,
-          "dueDate": 12
-      },
-      {
-          "id": 4,
-          "name": "Car payment",
-          "monthDueDate": 5,
-          "dueDate": 3
-      }
+  "finance": [
+    {
+      "id": 1,
+      "name": "Credit card",
+      "monthDueDate": 4,
+      "dueDate": 27
+    },
+    {
+      "id": 2,
+      "name": "Mortgage",
+      "monthDueDate": 5,
+      "dueDate": 1
+    },
+    {
+      "id": 3,
+      "name": "Phone bill",
+      "monthDueDate": 5,
+      "dueDate": 12
+    },
+    {
+      "id": 4,
+      "name": "Car payment",
+      "monthDueDate": 5,
+      "dueDate": 3
+    },
+    {
+      "id": 5,
+      "name": "Car insurance",
+      "monthDueDate": "4",
+      "dueDate": "27"
+    }
   ]
 }

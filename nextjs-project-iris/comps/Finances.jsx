@@ -1,7 +1,7 @@
 import { format, isAfter } from 'date-fns'
 const { toDate, parse } = require('date-fns')
 
-function Finances({financeData}) {
+function Finances({financeData, handleClick}) {
 
     const today = new Date();
     const formattedDate = format(today, 'MM/dd')
@@ -22,7 +22,7 @@ function Finances({financeData}) {
     return ( 
         <div>
             <h3>Today's Finances</h3>
-            <button>+</button>
+            <button onClick={handleClick}>+</button>
             <ul>{newFinanceList}</ul>
         </div>
      );

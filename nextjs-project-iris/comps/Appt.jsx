@@ -1,7 +1,7 @@
 import { format, isAfter } from 'date-fns'
 const { toDate, parse } = require('date-fns')
 
-function Appt({appointmentData}) {
+function Appt({appointmentData, handleClick}) {
 
     const today = new Date();
     const formattedDate = format(today, 'MM/dd')
@@ -19,9 +19,6 @@ function Appt({appointmentData}) {
     // const newList = newTask.filter(task => isAfter(parse(task[0], 'MM/dd', new Date()), today))
     const newAppointmentList = newAppointment.filter(appointment => appointment[0] === formattedDate)
 
-    function handleClick(){
-        console.log('hello')
-    }
     return ( 
         <div>
             <h3>Today's Appointments</h3>
