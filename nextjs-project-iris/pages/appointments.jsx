@@ -3,6 +3,7 @@ import Appt from '../comps/Appt';
 import Head from 'next/head'
 import {Container} from 'react-bootstrap'
 import Modal from '../comps/Modal'
+import styles from '../styles/Appointments.module.css'
 
 
 function Appointments({appointmentData}) {
@@ -29,10 +30,12 @@ function Appointments({appointmentData}) {
             <title>IRIS | Appointments</title>
             <link rel="icon" href="/favicon.ico" /> 
         </Head>
-        <Container>
-            <h1>Appointments</h1>
-            <Appt appointmentData={appointmentData} handleClick={handleClick}/>
-             {isModal ?  <Modal handleCloseModal={setIsModal} isModal={isModal}  handleSubmit={handleSubmit}/> : null}
+        <Container className={styles.display}>
+            <h1 style={{'margin-left':'.5em'}}>Appointments</h1>
+            <div style={{'border-radius': '6px'}}>
+                <Appt appointmentData={appointmentData} handleClick={handleClick}/>
+                {isModal ?  <Modal handleCloseModal={setIsModal} isModal={isModal}  handleSubmit={handleSubmit}/> : null}
+            </div>
         </Container>
         </>
      );

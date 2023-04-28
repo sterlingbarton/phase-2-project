@@ -3,7 +3,7 @@ import Finances from "../comps/Finances";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 import Modal from '../comps/Modal'
-
+import styles from '../styles/Finances.module.css'
 
 function Finance({financeData}) {
     const [isModal, setIsModal] = useState(false)
@@ -29,10 +29,13 @@ function Finance({financeData}) {
             <title>IRIS | Finance</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Container>
-            <h1>Finance</h1>
-            <Finances financeData={financeData} handleClick={handleClick}/>
-             {isModal ?  <Modal handleCloseModal={setIsModal} isModal={isModal} handleSubmit={handleSubmit}/> : null}
+        <Container className={styles.display}>
+            <h1 style={{'margin-left':'.5em'}}>Finance</h1>
+            <div style={{'border-radius': '6px'}}>
+                <Finances financeData={financeData} handleClick={handleClick}/>
+                {isModal ?  <Modal handleCloseModal={setIsModal} isModal={isModal} handleSubmit={handleSubmit}/> : null}
+            </div>
+           
         </Container>
         </>
      );

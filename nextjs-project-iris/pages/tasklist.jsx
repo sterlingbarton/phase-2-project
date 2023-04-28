@@ -3,11 +3,13 @@ import Tasks from "../comps/Tasks";
 import Head from "next/head";
 import {Container} from 'react-bootstrap'
 import Modal from '../comps/Modal'
+import styles from '../styles/Tasks.module.css'
 
 
 function Tasklist({taskData}) {
     const [isModal, setIsModal] = useState(false)
     const [taskList, setTaskList] = useState({taskData})
+
 
     function handleClick(){
        setIsModal(!isModal);
@@ -30,10 +32,13 @@ function Tasklist({taskData}) {
             <title>IRIS | Tasks</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Container>
-            <h1>Tasklist</h1>
-            <Tasks taskData={taskData} handleClick={handleClick}/>
-           {isModal ?  <Modal handleCloseModal={setIsModal} isModal={isModal} setTaskList={setTaskList}  handleSubmit={handleSubmit}/> : null}
+        <Container className={styles.display}>
+            <h1 style={{'margin-left':'.5em'}}>Tasklist</h1>
+            <div style={{'border-radius': '6px'}}>
+                <Tasks taskData={taskData} handleClick={handleClick}/>
+                {isModal ?  <Modal handleCloseModal={setIsModal} isModal={isModal} setTaskList={setTaskList}  handleSubmit={handleSubmit}/> : null}
+            </div>
+            
         </Container>
         </>
      );

@@ -1,0 +1,24 @@
+.addBtn {
+    padding: 0em .5em .1em;
+    padding-top: 0;
+    line-height: 1.5;
+    border: 1px solid #708090; 
+    border-radius: 8px;
+    position: relative;
+    left: 378px;
+}
+
+.liMap {
+    margin: auto 2.8em auto auto;
+    width: auto;
+}
+
+.display {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding-bottom: 1em;
+    margin-top: 1em
+}
+
+.header:hover{
+    cursor: pointer;
+}

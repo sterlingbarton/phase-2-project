@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Feed the dog",
       "monthDueDate": 4,
-      "dueDate": 27
+      "dueDate": 28
     },
     {
       "id": 2,
@@ -48,7 +48,7 @@
       "id": 1,
       "name": "Daughter's doctor",
       "monthDueDate": 4,
-      "dueDate": 27
+      "dueDate": 28
     },
     {
       "id": 2,
@@ -65,8 +65,8 @@
     {
       "id": 4,
       "name": "Meeting with boss",
-      "monthDueDate": 5,
-      "dueDate": 5
+      "monthDueDate": 4,
+      "dueDate": 28
     },
     {
       "id": 5,
@@ -78,9 +78,9 @@
   "finance": [
     {
       "id": 1,
-      "name": "Credit card",
+      "name": "Credit card payment",
       "monthDueDate": 4,
-      "dueDate": 27
+      "dueDate": 28
     },
     {
       "id": 2,
@@ -97,14 +97,20 @@
     {
       "id": 4,
       "name": "Car payment",
-      "monthDueDate": 5,
-      "dueDate": 3
+      "monthDueDate": 4,
+      "dueDate": 28
     },
     {
       "id": 5,
       "name": "Car insurance",
       "monthDueDate": "4",
       "dueDate": "27"
+    },
+    {
+      "id": 6,
+      "name": "Electric Payment",
+      "monthDueDate": "5",
+      "dueDate": "2"
     }
   ]
 }

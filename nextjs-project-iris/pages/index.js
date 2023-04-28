@@ -3,21 +3,23 @@ import Head from 'next/head';
 import Tasks from '../comps/Tasks';
 import Finances from '../comps/Finances'
 import Appt from '../comps/Appt'
+import Stack from 'react-bootstrap/Stack'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Home.module.css';
 
 export default function Home({taskData, appointmentData, financeData}) {
-  // console.log(pageProps)
   return (
     <>
       <Head>
         <title>IRIS | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Tasks taskData={taskData}/>
-        <Finances financeData={financeData}/>
-        <Appt appointmentData={appointmentData}/>
+      <main style={{'margin': '1em 3em'}}>
+        <Stack className={styles.display} direction='horizontal' gap={2}>
+          <Tasks taskData={taskData} />
+          <Appt appointmentData={appointmentData}/>
+          <Finances financeData={financeData}/>
+        </Stack>
       </main>
 
     </>

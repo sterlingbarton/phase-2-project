@@ -4,7 +4,7 @@ import {Container, Nav, Navbar} from 'react-bootstrap'
 function InnerNav() {
     const router = useRouter();
     return ( 
-        <Navbar>
+        <Navbar style={{'background-color': '#C0C2C9'}}>
         <Container>
             <Nav.Link onClick={() => router.push('/tasklist')}>Tasks</Nav.Link>
             {/* <Nav.Link href="#link">News</Nav.Link>
